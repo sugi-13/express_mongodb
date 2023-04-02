@@ -1,2 +1,2 @@
-# express_mongodb
+# express_mongodb 🍃
 simple application using express and mongodb
