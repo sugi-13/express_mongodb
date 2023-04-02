@@ -1,0 +1,14 @@
+<%- include('./layout/header') %>
+<body>
+    <h1>This is my <%= value %></h1>
+    <form action="/edit/<%= data.id %>?_method=PUT" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <input name="name" type="text" placeholder="enter name" value="<%= data.name %>">
+        <br><br>
+        <input name="rollno" type="text" placeholder="enter rollnumber" value="<%= data.rollno %>">
+        <br><br>
+        <input type="submit" value="EDIT">
+    </form>
+</body>
+</html>
+<!--href="/about"-->

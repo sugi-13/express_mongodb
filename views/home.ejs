@@ -1,0 +1,24 @@
+<%- include('./layout/header') %>
+<body>
+    <h1>This is my <%= value %></h1>
+    <form action="/add-item" method="post">
+        <input name="name" type="text" placeholder="enter name">
+        <br><br>
+        <input name="rollno" type="text" placeholder="enter rollnumber">
+        <br><br>
+        <input type="submit" value="ADD">
+    </form>
+    <br>
+    <% for(var i = 0;i<data.length; i++){ %>
+        <%= data[i].name %>
+        <%= data[i].rollno %>
+        <p><a href="/<%= data[i].id %>">Display</a></p>
+        <br>
+        <% } %>
+    <!--<% data.forEach((i)=>{ %>
+        <%= i.name %>
+        <%= i.rollno %>
+    <% }) %> -->
+</body>
+</html>
+<!--href="/about"-->
